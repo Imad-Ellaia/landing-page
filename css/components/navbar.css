@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding:0px 20px 0px 20px;
+  background: #cfd8dc;
+
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  padding-left: 60px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0d47a1;
+
+}
+
+.logo{
+  font-weight: Bolder;
+}
+
+
+.navbar li:hover {
+  transition: 400ms all ease;
+  color:  blue;
+  transform: scale(1.15);
+}
+
+
+
+ /*
+  Extra small devices (phones, 600px and down)
+*/
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar ul {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+  .navbar li {
+    padding: 0.5rem 0;
+  }
+}
